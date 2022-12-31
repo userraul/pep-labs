@@ -33,7 +33,7 @@ public class DropATable {
         try {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
-            s.executeUpdate(sql);
+            s.executeUpdate("DROP TABLE song");
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
